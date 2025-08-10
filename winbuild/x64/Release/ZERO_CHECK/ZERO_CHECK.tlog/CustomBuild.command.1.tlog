@@ -1,0 +1,10 @@
+^D:\PROJECTS\CPLUSPLUS\TIK-TAK-TOE-IMGUI\WINBUILD\CMAKEFILES\43B3040016D9AF270C2C0DC30BD76BF3\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/CPlusPlus/tik-tak-toe-imgui -BD:/Projects/CPlusPlus/tik-tak-toe-imgui/winbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Projects/CPlusPlus/tik-tak-toe-imgui/winbuild/tik-tak-toe-imgui.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

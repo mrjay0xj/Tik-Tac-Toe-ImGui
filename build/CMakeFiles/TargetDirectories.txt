@@ -1,3 +1,0 @@
-D:/Projects/CPlusPlus/tik-tak-toe-imgui/build/CMakeFiles/tik-tak-toe-imgui.dir
-D:/Projects/CPlusPlus/tik-tak-toe-imgui/build/CMakeFiles/ALL_BUILD.dir
-D:/Projects/CPlusPlus/tik-tak-toe-imgui/build/CMakeFiles/ZERO_CHECK.dir
