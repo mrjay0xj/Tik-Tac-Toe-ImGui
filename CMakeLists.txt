@@ -6,22 +6,22 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(SOURCES
      "main.cpp"
-     "libs/imgui/imgui.cpp"
-     "libs/imgui/imgui_draw.cpp"
-     "libs/imgui/imgui_widgets.cpp"
-     "libs/imgui/imgui_tables.cpp"
-     "libs/imgui/backends/imgui_impl_opengl3.cpp"
+     "libs/imguiInc/imgui.cpp"
+     "libs/imguiInc/imgui_draw.cpp"
+     "libs/imguiInc/imgui_widgets.cpp"
+     "libs/imguiInc/imgui_tables.cpp"
+     "libs/imguiInc/backends/imgui_impl_opengl3.cpp"
      
      # Add backend for your windowing library (GLFW/SFML/SDL)
-     "libs/imgui/backends/imgui_impl_glfw.cpp"
+     "libs/imguiInc/backends/imgui_impl_glfw.cpp"
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 
 target_include_directories(${PROJECT_NAME} PRIVATE
     "${CMAKE_SOURCE_DIR}/libs/glfw/include/"
-    "${CMAKE_SOURCE_DIR}/libs/imgui/"
-    "${CMAKE_SOURCE_DIR}/libs/imgui/backends")
+    "${CMAKE_SOURCE_DIR}/libs/imguiInc/"
+    "${CMAKE_SOURCE_DIR}/libs/imguiInc/backends")
 
 if (WIN32)
     target_link_libraries(${PROJECT_NAME} PRIVATE
